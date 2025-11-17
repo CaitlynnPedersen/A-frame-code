@@ -6,13 +6,16 @@
   <body>
     <a-scene>
       <a-assets>
-          <a-asset-item id="dolphin" src="assets/dolphin.gltf"></a-asset-item>
-          <a-asset-item id="fish" src="assets/fish.gltf"></a-asset-item>
+          <a-asset-item id="dolphin" src="assets/DOLPHIN.obj"></a-asset-item>
+          <a-asset-item id="fish" src="assets/Fish.obj"></a-asset-item>
+          <img id="background" src="assets/40287484761_fdaf6a1d29_b.jpg" alt="">
       </a-assets>
 
-      <a-entity gltf-model="dolphin" position=".5 0.75 -3" color="#000000"></a-entity>
-      <a-entity gltf-model="fish" position=".5 0.75 -3" color="#000000"></a-entity>
-      <a-sky color="#0000FF"></a-sky>
+     
+      <a-obj-model src="#dolphin" position="90 -80 -30" rotation="-90 0 0" color="#6699CC"></a-obj-model>
+      <a-obj-model src="#fish" position="1 15 -30" color="#0000FF" rotation="-90 0 0"></a-obj-model>
+      <a-sky src="#background"></a-sky>
+
     </a-scene>
   </body>
 </html>
